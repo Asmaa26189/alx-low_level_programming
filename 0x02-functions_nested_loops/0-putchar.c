@@ -1,18 +1,13 @@
 #include <unistd.h>
-#include <stdio.h>
 
 /**
- * main - Entry point
+ * _putchar - writes the character
+ * @x: The character to print
  *
- * Return: Always returns 0
- *
+ * Return: On success 1
+ * 
  */
-
-int main(void)
-  {
-
-      printf("_putchar\n")
-
-      return 0
-
-  }
+int _putchar(char x)
+{
+	return (write(1, &x, 1));
+}
