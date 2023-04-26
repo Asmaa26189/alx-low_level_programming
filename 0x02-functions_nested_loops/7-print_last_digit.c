@@ -3,7 +3,7 @@
 /**
  * print_last_digit - main function
  *
- * @n: the number to get last digit 
+ * @n: the number to get last digit
  *
  * Return: last digit of n number
  *
