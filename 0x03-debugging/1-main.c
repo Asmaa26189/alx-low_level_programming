@@ -4,6 +4,7 @@
 * main - infinite loop
 *
 * Return: always return 0
+*
 */
 
 int main(void)
