@@ -4,7 +4,7 @@
  * _strlen - get char length
  *
  * @s: character to get length
- * Return: returns length
+ * Return: length
  */
 int _strlen(char *s)
 {
@@ -13,7 +13,7 @@ int _strlen(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-	  i++;
+	      i++;
 	}
 	return (i);
 }
