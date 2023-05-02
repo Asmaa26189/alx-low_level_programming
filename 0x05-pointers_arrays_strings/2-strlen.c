@@ -4,6 +4,7 @@
  * _strlen - get char length
  *
  * @s: character to get length
+ * Return: returns length
  */
 int _strlen(char *s)
 {
