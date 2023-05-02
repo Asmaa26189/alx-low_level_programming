@@ -3,7 +3,7 @@
 /**
  * print_array -  array
  *
- * @a: pointer 
+ * @a: pointer
  * @n: times to prints
  *
  */
