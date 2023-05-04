@@ -2,6 +2,7 @@
 /**
  * _indexOf - boolean special char
  * @a: character
+ * Return: value 
  */
 int _indexOf(char a)
 {
@@ -19,6 +20,7 @@ int _indexOf(char a)
 /**
  * cap_string - capitalizes
  * @s: string
+ * Return: value
  */
 char *cap_string(char *s)
 {
