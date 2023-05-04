@@ -2,7 +2,7 @@
 /**
  * _indexOf - boolean special char
  * @a: character
- * Return: value 
+ * Return: value
  */
 int _indexOf(char a)
 {
