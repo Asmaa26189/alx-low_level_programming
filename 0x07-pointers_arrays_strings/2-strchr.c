@@ -1,4 +1,4 @@
-#include " main.h"
+#include "main.h"
 /**
  * _strchr -location of character
  * @s: string
