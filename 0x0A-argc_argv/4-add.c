@@ -5,7 +5,7 @@
 #define UNUSED(x) (void)(x)
 /**
  * StringCheck - checks string
- * @s: string
+ * @s: string to check
  * Return: boolean
  */
 int StringCheck(char *s)
@@ -23,9 +23,9 @@ int StringCheck(char *s)
 }
 /**
  * main - main function
- * @argc: arg
- * @argv: vector arg
- *Return: 0
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
 int main(int argc, char  *argv[])
 {
@@ -54,3 +54,5 @@ int main(int argc, char  *argv[])
 		printf("%d\n", 0);
 		return (1);
 	}
+
+}
