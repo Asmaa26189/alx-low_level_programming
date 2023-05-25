@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all - suة
+ * sum_them_all - sum
  * @n: integers
  * Return: value
  */
