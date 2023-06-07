@@ -2,7 +2,7 @@
 /**
  * add_nodeint - add end node
  * @head: head
- * @n: new node number 
+ * @n: new node number
  * Return: linked list
  */
 listint_t *add_nodeint(listint_t **head, const int n)
