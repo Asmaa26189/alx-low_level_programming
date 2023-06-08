@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include "2-get_bit.c"
 /**
  * clear_bit - clear bit
