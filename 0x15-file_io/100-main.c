@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 	if (close(fd))
 		dprintf(STDERR_FILENO, "Problem closing fd %d", fd);
 	get_magic(helf, argv[1], fd);
-    get_functions(helf)
+    get_functions(helf);
 	exit(EXIT_SUCCESS);
 }
 
