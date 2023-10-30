@@ -7,6 +7,55 @@
 #include <elf.h>
 
 /**
+ * get_vabi - get vabi
+ * @ehdr: header
+ * Return: empty
+ */
+void get_vabi(Elf64_Ehdr *ehdr)
+{
+	printf("%-35s%d\n", "ABI Version:", ehdr->e_ident[EI_ABIVERSION]);
+}
+
+/**
+ * get_type - get type
+ * @ehdr: header
+ * Return: empty
+ */
+void get_type(Elf64_Ehdr *ehdr)
+{
+	printf("%-35s", "Type:");
+	switch (ehdr->e_type)
+	{
+	case ET_NONE:
+		printf("NONE (Unknown type)\n");
+		break;
+	case ET_REL:
+		printf("REL (Relocatable file)\n");
+		break;
+	case ET_EXEC:
+		printf("EXEC (Executable file)\n");
+		break;
+	case ET_DYN:
+		printf("DYN (Shared object file)\n");
+		break;
+	case ET_CORE:
+		printf("CORE (Core file)\n");
+		break;
+	}
+}
+
+/**
+ * get_entry - get entry
+ * @ehdr: header
+ * Retrun: empty
+ */
+void get_entry(Elf64_Ehdr *ehdr)
+{
+	printf("%-35s0x%lx\n", "Entry point address:",
+	       (unsigned long) ehdr->e_entry);
+}
+
+/**
  * main - main
  * @argc: number argument
  * @argv: array args
