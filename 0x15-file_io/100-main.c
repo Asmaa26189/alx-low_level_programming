@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 	if (close(fd))
 		dprintf(STDERR_FILENO, "Problem closing fd %d", fd);
 	get_magic(helf, argv[1], fd);
-    get_functions(helf);
+get_functions(helf);
 	exit(EXIT_SUCCESS);
 }
 
@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
  */
 void get_functions(Elf64_Ehdr *helf)
 {
-    get_class(helf);
+get_class(helf);
 	get_data(helf);
 	get_velf(helf);
 	get_osabi(helf);
