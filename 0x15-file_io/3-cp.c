@@ -41,10 +41,11 @@ int main(int ac, char **av)
 		exit(98);
 	if (close(openFile) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", openFile);
+	if (close(openFile) == -1)
+		exit(100);
 	if (close(openFileToo) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", openFileToo);
-	if (close(openFileToo) == -1) || (close(openFile) == -1)
+	if (close(openFileToo) == -1)
 		exit(100);
-
 	return (0);
 }
