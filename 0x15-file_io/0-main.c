@@ -4,8 +4,8 @@
 
 /**
  * main - check the code
- * ac: input variable
- * av: input variable
+ *@ac: input variable
+ *@av: input variable
  * Return: Always 0.
  */
 int main(int ac, char **av)
