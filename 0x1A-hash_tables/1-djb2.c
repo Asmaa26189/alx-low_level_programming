@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_djb2 - hash_djb2
  * @str: str
