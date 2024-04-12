@@ -2,9 +2,8 @@
 #include "search_algos.h"
 
 /**
- * print_list - Prints the content of a listint_t
- *
- * @list: Pointer to the head of the list
+ * print_list - print_list
+ * @list: list
  */
 void print_list(const listint_t *list)
 {

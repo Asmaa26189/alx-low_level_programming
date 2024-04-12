@@ -4,31 +4,29 @@
 void free_list(listint_t *list);
 
 /**
- * create_list - Creates a single linked list
- *
- * @array: Pointer to the array to use to fill the list
- * @size: Size of the array
- *
- * Return: A pointer to the head of the created list (NULL on failure)
+ * create_list - create_list
+ * @array: array
+ * @size: size
+ * Return: listint_t
  */
 listint_t *create_list(int *array, size_t size)
 {
-	listint_t *list;
-	listint_t *node;
+	listint_t *l;
+	listint_t *n;
 
-	list = NULL;
+	l = NULL;
 	while (array && size--)
 	{
-		node = malloc(sizeof(*node));
-		if (!node)
+		n = malloc(sizeof(*n));
+		if (!n)
 		{
-			free_list(list);
+			free_list(l);
 			return (NULL);
 		}
-		node->n = array[size];
-		node->index = size;
-		node->next = list;
-		list = node;
+		n->n = array[size];
+		n->index = size;
+		n->next = l;
+		l = n;
 	}
-	return (list);
+	return (l);
 }
